@@ -2,6 +2,7 @@ import os
 import subprocess
 import tempfile
 import xml.etree.ElementTree as ET
+from app.discovery.network_discovery import get_nmap_path
 
 
 def scan_host(target: str) -> dict:
@@ -9,12 +10,13 @@ def scan_host(target: str) -> dict:
     Run an Nmap service/version scan against an authorized target
     and return structured information.
     """
+    nmap_bin = get_nmap_path()
 
     with tempfile.TemporaryDirectory() as temp_dir:
         xml_path = os.path.join(temp_dir, "scan.xml")
 
         command = [
-            "nmap",
+            nmap_bin,
             "-sV",
             "-oX",
             xml_path,

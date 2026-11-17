@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="vgGrad" x1="6" y1="4" x2="42" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#007AFF"/>
+      <stop offset="1" stop-color="#0051C7"/>
+    </linearGradient>
+    <linearGradient id="vgLensRing" x1="14" y1="12" x2="34" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#DCEBFF"/>
+    </linearGradient>
+    <filter id="vgShadow" x="2" y="2" width="44" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0051C7" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Security Shield Outer Geometry -->
+  <g filter="url(#vgShadow)">
+    <path d="M24 3.5C33.5 3.5 42 7.5 42 16.5C42 29.5 31.5 39.5 24 44.5C16.5 39.5 6 29.5 6 16.5C6 7.5 14.5 3.5 24 3.5Z" fill="url(#vgGrad)"/>
+  </g>
+  
+  <!-- Inner Shield Subtle Accent Line -->
+  <path d="M24 6.5C32 6.5 39 10 39 17.5C39 28.5 30 37.5 24 41.5C18 37.5 9 28.5 9 17.5C9 10 16 6.5 24 6.5Z" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
+  
+  <!-- CCTV Top Mount Bracket -->
+  <rect x="20.5" y="8.5" width="7" height="2.5" rx="1.25" fill="#FFFFFF" fill-opacity="0.9"/>
+  <rect x="22.5" y="11" width="3" height="2" fill="#FFFFFF" fill-opacity="0.9"/>
+  
+  <!-- CCTV Camera Lens Structure -->
+  <!-- Outer Aperture Ring -->
+  <circle cx="24" cy="23" r="10" stroke="url(#vgLensRing)" stroke-width="2.5" fill="#003D9E" fill-opacity="0.4"/>
+  <!-- Focus Ring Indicator Notch -->
+  <circle cx="24" cy="23" r="10" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="3 4" fill="none"/>
+  <!-- Inner Lens Barrel -->
+  <circle cx="24" cy="23" r="6" fill="#FFFFFF"/>
+  <!-- Camera Sensor / Core Pupil -->
+  <circle cx="24" cy="23" r="3.75" fill="#007AFF"/>
+  <!-- Optical Reflection Glint -->
+  <circle cx="25.5" cy="21.5" r="1.25" fill="#FFFFFF"/>
+</svg>

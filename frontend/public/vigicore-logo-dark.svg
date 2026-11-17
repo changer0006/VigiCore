@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 48" fill="none">
+  <defs>
+    <linearGradient id="vgGradFullDark" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A84FF"/>
+      <stop offset="1" stop-color="#0066EE"/>
+    </linearGradient>
+    <linearGradient id="vgLensRingFullDark" x1="14" y1="12" x2="34" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#DCEBFF"/>
+    </linearGradient>
+    <filter id="vgShadowFullDark" x="0" y="1" width="48" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0A84FF" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Left Icon Mark -->
+  <g transform="translate(0, 0)">
+    <!-- Security Shield Outer Geometry -->
+    <g filter="url(#vgShadowFullDark)">
+      <path d="M24 4.5C33.5 4.5 41.5 8.2 41.5 16.8C41.5 29.2 31.5 38.8 24 43.5C16.5 38.8 6.5 29.2 6.5 16.8C6.5 8.2 14.5 4.5 24 4.5Z" fill="url(#vgGradFullDark)"/>
+    </g>
+    <!-- Inner Shield Subtle Accent Line -->
+    <path d="M24 7.2C31.5 7.2 38.5 10.5 38.5 17.5C38.5 28 29.8 36.8 24 40.5C18.2 36.8 9.5 28 9.5 17.5C9.5 10.5 16.5 7.2 24 7.2Z" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.2" fill="none"/>
+    <!-- CCTV Mount Bracket -->
+    <rect x="20.5" y="9.5" width="7" height="2.2" rx="1.1" fill="#FFFFFF" fill-opacity="0.9"/>
+    <rect x="22.5" y="11.7" width="3" height="1.8" fill="#FFFFFF" fill-opacity="0.9"/>
+    <!-- CCTV Camera Lens Structure -->
+    <circle cx="24" cy="23" r="9.5" stroke="url(#vgLensRingFullDark)" stroke-width="2.2" fill="#002D75" fill-opacity="0.5"/>
+    <circle cx="24" cy="23" r="9.5" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="1.2" stroke-dasharray="3 3.5" fill="none"/>
+    <circle cx="24" cy="23" r="5.6" fill="#FFFFFF"/>
+    <circle cx="24" cy="23" r="3.5" fill="#0A84FF"/>
+    <circle cx="25.5" cy="21.5" r="1.1" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Right Typography Wordmark -->
+  <g transform="translate(56, 0)">
+    <!-- Brand Title: VigiCore -->
+    <text x="0" y="27" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.02em">
+      <tspan fill="#FFFFFF">Vigi</tspan>
+      <tspan fill="#0A84FF">Core</tspan>
+    </text>
+    <!-- Subtitle: CCTV SECURITY PLATFORM -->
+    <text x="0.5" y="40" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="600" fill="#98989D" letter-spacing="0.14em">CCTV SECURITY PLATFORM</text>
+  </g>
+</svg>
